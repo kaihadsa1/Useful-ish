@@ -30,7 +30,7 @@ async def hug(ctx: lightbulb.context.Context, ) -> None:
     ) as res:
         if res.ok:
             res = await res.json()
-            embed = hikari.Embed(description = f"{ctx.member.mention} hugged {target.mention}", colour=0x3B9DFF) #
+            embed = hikari.Embed(description=f"{ctx.member.mention} hugged {target.mention}", colour=0x3B9DFF)
             # wanna switch {ctx.member.mention} to 'you' if people don't like it#
             embed.set_image(res["link"])
 
