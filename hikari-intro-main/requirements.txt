@@ -7,3 +7,5 @@ uvloop>=0.16; sys_platform != "win32"
 
 
 aiohttp~=3.8.1
+
+hikari~=2.0.0.dev108
