@@ -4,15 +4,12 @@ import hikari
 import lightbulb
 from lightbulb import errors
 
-
-
 mod_plugin = lightbulb.Plugin("Mod")
 
 @lightbulb.add_checks(
     lightbulb.has_guild_permissions(hikari.Permissions.MANAGE_MESSAGES),
     lightbulb.bot_has_guild_permissions(hikari.Permissions.MANAGE_MESSAGES)
 )
-
 @mod_plugin.command
 @lightbulb.option(
     "messages", "The number of messages to purge.", type=int, required=True
