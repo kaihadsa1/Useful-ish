@@ -1,1 +1,1 @@
-#yo dis my bot :D
+yo dis my bot :D
